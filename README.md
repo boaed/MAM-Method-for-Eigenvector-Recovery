@@ -26,7 +26,7 @@ You can adjust the following parameters directly in `Exeperiment_varying_paramet
 | `r_list`         | List of rank values to experiment with                       | `[6, 8, 10]`       |
 | `K`              | Number of primes used in matrix construction (derived)       | Automatically set |
 | `p_list`         | List of prime numbers for coherent matrix                    | Automatically set |
-| `runs`           | Number of experimental runs per rank value                   | `10`              |
+| `runs`           | Number of experimental runs                                  | `10`              |
 
 These settings control the synthetic data generation, matrix structure, and experiment repetitions.
 
