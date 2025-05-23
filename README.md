@@ -10,5 +10,11 @@ This repository contains all the necessary files to reproduce the experiments re
 - `Experiment_varying_rows.py`: A python script needed for the experiments showing how the errors before and after recovery are affected by the number of rows in the $(K,\alpha)$-coherent matrix **M**
 
 ## Usage
+# How to run for instance the experiment in the case of varying rank
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/boahened/MAM_Method_for_Eigenvector_Recovery.git
+   cd MAM_Method_for_Eigenvector_Recovery
 
-Instructions on how to run the experiments will go here.
+2. Install dependencies
+   
