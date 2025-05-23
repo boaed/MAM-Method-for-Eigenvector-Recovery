@@ -28,14 +28,13 @@ You can adjust the following parameters directly in `Exeperiment_varying_paramet
 | `p_list`         | List of prime numbers for coherent matrix                    | `[11,13,17,19]` |
 | `runs`           | Number of experimental runs                                  | `10`              |
 
-These settings control the synthetic data generation, matrix structure, and experiment repetitions.
-
+These settings control the generation of the matrix A, its rank and the sparsity and decay of its eigenpairs. These parameters also dictate the number of trial we need to average over
 ## Usage
-# How to run for instance the experiment in the case of varying rank
+# How to run for instance the experiment with the varying rank: Simplest Case  in the case of varying rank
 1. Clone the repo:
    ```bash
    git clone https://github.com/boahened/MAM_Method_for_Eigenvector_Recovery.git
    cd MAM_Method_for_Eigenvector_Recovery
+2. Modify the parameters in `Experiment_varying_rank.py`:
 
-2. Install dependencies
    
