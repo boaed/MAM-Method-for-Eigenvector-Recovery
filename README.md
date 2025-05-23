@@ -8,7 +8,7 @@ This repository contains all the necessary files to reproduce the experiments re
 - `Experiment_varying_rank.py`: This python script is needed for the experiments showing how the errors before and after recovery are affected by the rank of the original matrix **A**
 - `Experiment_varying_sparsity.py`: This python script is needed for the experiments showing how the errors before and after recovery are affected by the sparsity of the original eigenvectors of the matrix **A**
 - `Experiment_varying_rows.py`: A python script needed for the experiments showing how the errors before and after recovery are affected by the number of rows in the $(K,\alpha)$-coherent matrix **M**
-
+- the additional .sh files were used to run the code on a HPC machine
 
 
 ##  Parameters
