@@ -25,7 +25,7 @@ You can adjust the following parameters directly in `Exeperiment_varying_paramet
 | `support_type`   | Support configuration for sparse signals                     | `'disjoint'`      |
 | `r_list`         | List of rank values to experiment with                       | `[6, 8, 10]`       |
 | `K`              | Number of primes used in matrix construction (derived)       | '20' |
-| `p_list`         | List of prime numbers for coherent matrix                    | '[11,13,17,19]' |
+| `p_list`         | List of prime numbers for coherent matrix                    | `[11,13,17,19]` |
 | `runs`           | Number of experimental runs                                  | `10`              |
 
 These settings control the synthetic data generation, matrix structure, and experiment repetitions.
