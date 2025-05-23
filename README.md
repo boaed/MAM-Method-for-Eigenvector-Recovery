@@ -35,6 +35,41 @@ These settings control the generation of the matrix A, its rank and the sparsity
    ```bash
    git clone https://github.com/boahened/MAM_Method_for_Eigenvector_Recovery.git
    cd MAM_Method_for_Eigenvector_Recovery
-2. Modify the parameters in `Experiment_varying_rank.py`:
+2. Modify the parameters in the `def main()` in the script named`Experiment_varying_rank.py`
 
-   
+## 📄 Output Description
+
+After running the experiment, a `.csv` file is generated in the `figs_varying_rank/` directory. Each row corresponds to an eigenvector trial and contains the following columns:
+
+| Column Name               | Description |
+|---------------------------|-------------|
+| `num_primes`              | Number of primes used to construct the $(K, \alpha)$-coherent matrix |
+| `num_rows_m`              | Total number of rows in matrix $M$ (sum of selected primes) |
+| `eigen_vector_index`      | Index of the eigenvector in the current trial |
+| `true_eigenvalue`         | True eigenvalue of the synthetic matrix |
+| `approx_eigenvalue`       | Approximated eigenvalue recovered by the algorithm |
+| `l2_true_meas`            | $\ell_2$ norm of the true measurement vector |
+| `l2_approx_meas`          | $\ell_2$ norm of the recovered measurement vector |
+| `rel_l2_error`            | Relative $\ell_2$ error (before inversion) |
+| `linf_error`              | $\ell_\infty$ error (before inversion) |
+| `l2_true_eig`             | $\ell_2$ norm of the true eigenvector (should be close to 1) |
+| `l2_approx_eig`           | $\ell_2$ norm of the recovered eigenvector |
+| `rel_l2_inversion_error`  | Relative $\ell_2$ error (after inversion) |
+| `linf_inversion_error`    | $\ell_\infty$ error (after inversion) |
+| `index_difference`        | Count of mismatches in top-$s$ indices of true vs. recovered eigenvector |
+| `beta`                    | Value of the $\beta$ parameter used in theoretical analysis |
+
+---
+
+## 📈 Plots Generated
+
+The experiment produces five key plots for analysis, saved in the `figs_varying_rank/` directory:
+
+1. **Relative $\ell_2$ Error (before inversion)**
+2. **$\ell_\infty$ Error (before inversion)**
+3. **Relative $\ell_2$ Error (after inversion)**
+4. **$\ell_\infty$ Error (after inversion)**
+5. **$\beta$ Parameter Plot**
+
+Plot filenames include key experimental parameters for easy identification and comparison.
+
