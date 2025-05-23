@@ -37,7 +37,7 @@ These settings control the generation of the matrix A, its rank and the sparsity
    cd MAM_Method_for_Eigenvector_Recovery
 2. Modify the parameters in the `def main()` in the script named`Experiment_varying_rank.py`
 
-## 📄 Output Description
+##  Output Description
 
 After running the experiment, a `.csv` file is generated in the `figs_varying_rank/` directory. Each row corresponds to an eigenvector trial and contains the following columns:
 
@@ -61,7 +61,7 @@ After running the experiment, a `.csv` file is generated in the `figs_varying_ra
 
 ---
 
-## 📈 Plots Generated
+##  Plots Generated
 
 The experiment produces five key plots for analysis, saved in the `figs_varying_rank/` directory:
 
