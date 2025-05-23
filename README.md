@@ -5,7 +5,10 @@ This repository contains all the necessary files to reproduce the experiments re
 ## Files
 
 - `primes.txt`: A list of prime numbers less than 10,000. This file is required for constructing the $(K, \alpha)$-coherent matrix **M**.
-- `Experiment_varying_rank.py`: A python script needed for the experiments showing how the errors before and after recovery are affected by the rank of the original matrix **A**
+- `Experiment_varying_rank.py`: This python script is needed for the experiments showing how the errors before and after recovery are affected by the rank of the original matrix **A**
+- `Experiment_varying_sparsity.py`: This python script is needed for the experiments showing how the errors before and after recovery are affected by the sparsity of the original eigenvectors of the matrix **A**
+- `Experiment_varying_rows.py`: A python script needed for the experiments showing how the errors before and after recovery are affected by the number of rows in the $(K,\alpha)$-coherent matrix **M**
+
 ## Usage
 
 Instructions on how to run the experiments will go here.
