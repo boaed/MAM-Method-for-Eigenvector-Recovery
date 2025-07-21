@@ -14,7 +14,8 @@ from dataclasses import dataclass, asdict
 
 
 # Load primes only once and cache them
-file_path = Path(__file__).parent / 'list of primes.txt'
+file_path = Path(__file__).resolve().parents[1] / "data" / "list_of_primes.txt"
+
 
 with open(file_path, 'r') as file:
     content = file.read()
@@ -733,24 +734,24 @@ def plot_experiment(csv_path: Path, fig_dir: Path, param_str: str, N, s, m, K, r
 
 
 def main():
-    N = 10000000 # Matrix size
-    s = 100  # Sparsity
+    N = 100 # Matrix size
+    s = 9  # Sparsity
     decay_type = 'expo'  # Decay type
     times_of_nnz = 0  # Times of nonzeros
     ratio = 0  # Ratio
     support_type = 'disjoint'  # Support type
 
     #K = 70  # Number of primes
-    r_list = [10,14,18,20,24,28,30]  # List of rank values
-    K,p_list  = number_and_list_primes(10000,3, 70)
+    r_list = [6,7]  # List of rank values
+    K,p_list  = number_and_list_primes(100,2, 20)
     smallest_prime = p_list[0]
-    runs = 25  # Number of runs per rank value
+    runs = 1  # Number of runs per rank value
 
     # Create output directories
-    fig_dir = Path('./Experiments_for_Papers/figs_varying_rank')
-    fig_dir.mkdir(exist_ok=True)
-
-    param_str = f'N={N}_s={s}_decay={decay_type}_nnz={times_of_nnz}_ratio={ratio}_support={support_type}_K={K}_smallest_primes={smallest_prime}_r={"|".join(map(str, r_list))}_runs={runs}'
+    fig_dir = Path(__file__).resolve().parents[1] / "figs"
+    fig_dir.mkdir(parents=True, exist_ok=True)
+ 
+    param_str = f'N={N}_s={s}_decay={decay_type}_nnz={times_of_nnz}_ratio={ratio}_support={support_type}_K={K}_smallest_primes={smallest_prime}_r={"_".join(map(str, r_list))}_runs={runs}'
     csv_path = fig_dir / f'results_rank_{param_str}.csv'
 
     # Run the experiment
