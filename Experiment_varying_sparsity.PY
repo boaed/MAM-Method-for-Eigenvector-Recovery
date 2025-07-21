@@ -17,7 +17,7 @@ random.seed(42)
 
 
 # Load primes only once and cache them
-file_path = '/mnt/home/boahened/MAM_Simulate/Prime_numbers.txt'
+file_path = Path(__file__).parent / 'list of primes.txt'
 
 with open(file_path, 'r') as file:
     content = file.read()
