@@ -30,7 +30,7 @@ You can adjust the following parameters directly in `Exeperiment_varying_paramet
 
 These settings control the generation of the matrix A, its rank and the sparsity and decay of its eigenpairs. These parameters also dictate the number of trial we need to average over
 ## Usage
-# How to run for instance the experiment with the varying rank: Simplest Case  in the case of varying rank
+# How to run for instance the experiment(s): Example of varying rank
 1. Clone the repo:
    ```bash
    git clone https://github.com/boahened/MAM_Method_for_Eigenvector_Recovery.git
